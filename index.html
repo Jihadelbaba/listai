@@ -1,691 +1,314 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>listAI — AI Content for Real Estate Agents</title>
-  <meta name="description" content="listAI generates Instagram, TikTok, LinkedIn posts, video scripts, and neighbourhood action plans for real estate agents in seconds." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+listAI
+How it works Features Pricing Sign in Start free →
+How it works Features Pricing Sign in Start free →
+AI for real estate agents
+Your listings, beautifully told.
+Enter a property. Get 3 posts per platform, a full video script, and a neighbourhood action plan — in under 60 seconds.
+Generate your first listing See pricing
+3×Posts per platform
+6Platforms covered
+60sGeneration time
+Generated for · Downtown Dubai Villa · AED 4,200,000
 
-<!-- ═══════════════════════════════════════
-     NAVIGATION
-════════════════════════════════════════ -->
-<nav class="nav" id="main-nav">
-  <div class="logo" onclick="showPage('landing')">list<em>AI</em></div>
-  <div class="nav-links">
-    <span class="nav-link" onclick="navScroll('how')">How it works</span>
-    <span class="nav-link" onclick="navScroll('features')">Features</span>
-    <span class="nav-link" onclick="navScroll('pricing')">Pricing</span>
-    <span class="nav-link" onclick="showPage('login')">Sign in</span>
-    <button class="nav-cta" onclick="showPage('signup')">Start free →</button>
-  </div>
-  <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-<div class="mobile-menu" id="mobile-menu">
-  <span onclick="navScroll('how');toggleMobileMenu()">How it works</span>
-  <span onclick="navScroll('features');toggleMobileMenu()">Features</span>
-  <span onclick="navScroll('pricing');toggleMobileMenu()">Pricing</span>
-  <span onclick="showPage('login')">Sign in</span>
-  <button onclick="showPage('signup')">Start free →</button>
-</div>
+Instagram · Post 1
+Waking up to the Burj Khalifa every single morning. This isn't just a home — it's a statement. 4BR villa with private pool, marble finishes, and a view that stops time...
+"The most iconic address in the city."
+#DowntownDubai #LuxuryLiving #DubaiRealEstate #BurjKhalifaView
+Video script · Hook
+"Stop scrolling. I need you to see this view right now..."
+Action plan · Step 1
+Post in 3 Downtown Dubai WhatsApp investor groups tonight
+How it works
+Three steps to perfect content
+01
+Enter your property details
+Type, bedrooms, price, location, and the features that make it special. The more you share, the richer the output.
+02
+Choose platforms and tone
+Pick Instagram, TikTok, LinkedIn and more. Select your tone — luxury, urgent, story-driven — to match your brand.
+03
+Get your full content pack
+3 posts per platform with captions, a full video script, and a neighbourhood go-live action plan. Copy and post.
+Features
+Everything an agent needs
 
-<!-- ═══════════════════════════════════════
-     PAGE: LANDING
-════════════════════════════════════════ -->
-<div id="page-landing" class="page active">
+3 posts per platform
+Each platform gets three unique, scroll-stopping posts — different angles, different hooks, same property.
+All plans
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-left">
-        <div class="eyebrow"><span class="eyebrow-dot"></span>AI for real estate agents</div>
-        <h1>Your listings,<br><em>beautifully told.</em></h1>
-        <p class="hero-desc">Enter a property. Get 3 posts per platform, a full video script, and a neighbourhood action plan — in under 60 seconds.</p>
-        <div class="hero-btns">
-          <button class="btn-primary" onclick="showPage('signup')">Generate your first listing</button>
-          <button class="btn-secondary" onclick="navScroll('pricing')">See pricing</button>
-        </div>
-        <div class="hero-stats">
-          <div class="stat"><span class="stat-n">3×</span><span class="stat-l">Posts per platform</span></div>
-          <div class="stat"><span class="stat-n">6</span><span class="stat-l">Platforms covered</span></div>
-          <div class="stat"><span class="stat-n">60s</span><span class="stat-l">Generation time</span></div>
-        </div>
-      </div>
-      <div class="hero-right">
-        <div class="hero-preview">
-          <div class="preview-label">Generated for · Downtown Dubai Villa · AED 4,200,000</div>
-          <div class="preview-card">
-            <div class="preview-platform">
-              <div class="plat-dot" style="background:#E1306C"></div>
-              <span>Instagram · Post 1</span>
-            </div>
-            <p class="preview-text">Waking up to the Burj Khalifa every single morning. This isn't just a home — it's a statement. 4BR villa with private pool, marble finishes, and a view that stops time...</p>
-            <p class="preview-caption">"The most iconic address in the city."</p>
-            <p class="preview-tags">#DowntownDubai #LuxuryLiving #DubaiRealEstate #BurjKhalifaView</p>
-          </div>
-          <div class="preview-row">
-            <div class="preview-mini">
-              <div class="mini-label">Video script · Hook</div>
-              <p>"Stop scrolling. I need you to see this view right now..."</p>
-            </div>
-            <div class="preview-mini">
-              <div class="mini-label">Action plan · Step 1</div>
-              <p>Post in 3 Downtown Dubai WhatsApp investor groups tonight</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+Smart captions
+Every post includes a punchy one-line caption — the hook that makes someone stop and read.
+All plans
 
-  <!-- HOW IT WORKS -->
-  <section class="section bg-cream2" id="how">
-    <div class="container">
-      <div class="eyebrow-gold">How it works</div>
-      <h2 class="section-title">Three steps to perfect content</h2>
-      <div class="steps-grid">
-        <div class="step-card">
-          <div class="step-num">01</div>
-          <h3>Enter your property details</h3>
-          <p>Type, bedrooms, price, location, and the features that make it special. The more you share, the richer the output.</p>
-        </div>
-        <div class="step-card">
-          <div class="step-num">02</div>
-          <h3>Choose platforms and tone</h3>
-          <p>Pick Instagram, TikTok, LinkedIn and more. Select your tone — luxury, urgent, story-driven — to match your brand.</p>
-        </div>
-        <div class="step-card">
-          <div class="step-num">03</div>
-          <h3>Get your full content pack</h3>
-          <p>3 posts per platform with captions, a full video script, and a neighbourhood go-live action plan. Copy and post.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+Full video script
+Hook, intro, walkthrough, highlight, and CTA — timed and written to be spoken on camera, with filming tips.
+Agent+
 
-  <!-- FEATURES -->
-  <section class="section bg-white" id="features">
-    <div class="container">
-      <div class="eyebrow-gold">Features</div>
-      <h2 class="section-title">Everything an agent needs</h2>
-      <div class="feat-grid">
-        <div class="feat-cell">
-          <div class="feat-icon">
-            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-          </div>
-          <h3>3 posts per platform</h3>
-          <p>Each platform gets three unique, scroll-stopping posts — different angles, different hooks, same property.</p>
-          <span class="feat-tag">All plans</span>
-        </div>
-        <div class="feat-cell">
-          <div class="feat-icon">
-            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-          </div>
-          <h3>Smart captions</h3>
-          <p>Every post includes a punchy one-line caption — the hook that makes someone stop and read.</p>
-          <span class="feat-tag">All plans</span>
-        </div>
-        <div class="feat-cell">
-          <div class="feat-icon">
-            <svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
-          </div>
-          <h3>Full video script</h3>
-          <p>Hook, intro, walkthrough, highlight, and CTA — timed and written to be spoken on camera, with filming tips.</p>
-          <span class="feat-tag">Agent+</span>
-        </div>
-        <div class="feat-cell">
-          <div class="feat-icon">
-            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          </div>
-          <h3>Neighbourhood action plan</h3>
-          <p>A 4-step go-live strategy specific to the property's location — WhatsApp groups, local communities, timing.</p>
-          <span class="feat-tag">Agent+</span>
-        </div>
-        <div class="feat-cell">
-          <div class="feat-icon">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg>
-          </div>
-          <h3>Tone & brand control</h3>
-          <p>Luxury, warm, urgent, professional, or story-driven — every word matches the mood you want to create.</p>
-          <span class="feat-tag">All plans</span>
-        </div>
-        <div class="feat-cell">
-          <div class="feat-icon">
-            <svg viewBox="0 0 24 24"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg>
-          </div>
-          <h3>Hashtag engine</h3>
-          <p>Platform-optimised hashtag sets generated automatically — location-specific, niche, and high-reach.</p>
-          <span class="feat-tag">All plans</span>
-        </div>
-        <div class="feat-cell">
-          <div class="feat-icon">
-            <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          </div>
-          <h3>Custom brand voice</h3>
-          <p>Define your personal style once. Every generation sounds like you — not like a robot.</p>
-          <span class="feat-tag">Pro+</span>
-        </div>
-        <div class="feat-cell">
-          <div class="feat-icon">
-            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </div>
-          <h3>Email newsletter draft</h3>
-          <p>Turn any listing into a polished email ready to send to your contact list.</p>
-          <span class="feat-tag">Pro+</span>
-        </div>
-        <div class="feat-cell">
-          <div class="feat-icon">
-            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-          </div>
-          <h3>Team dashboard</h3>
-          <p>Up to 5 agent seats with shared brand voice and a unified content history for your whole office.</p>
-          <span class="feat-tag">Team</span>
-        </div>
-      </div>
-    </div>
-  </section>
+Neighbourhood action plan
+A 4-step go-live strategy specific to the property's location — WhatsApp groups, local communities, timing.
+Agent+
 
-  <!-- PRICING -->
-  <section class="section bg-cream2" id="pricing">
-    <div class="container">
-      <div class="eyebrow-gold">Pricing</div>
-      <h2 class="section-title">Simple, agent-first plans</h2>
-      <p class="section-sub">No free plan — every plan is built to deliver real results from day one.</p>
-      <div class="plans-grid">
-        <div class="plan-card" onclick="goStripe('starter')">
-          <div class="plan-tier">Starter</div>
-          <div class="plan-price"><sup>$</sup>4<sub>/mo</sub></div>
-          <div class="plan-quota">5 listings / month</div>
-          <ul class="plan-features">
-            <li>Instagram &amp; Facebook posts</li>
-            <li>3 posts per platform</li>
-            <li>Smart captions</li>
-            <li>Hashtag engine</li>
-            <li>3 tone options</li>
-            <li>30-day listing history</li>
-            <li>Copy to clipboard</li>
-          </ul>
-          <button class="plan-btn" onclick="goStripe('starter')">Get started</button>
-        </div>
-        <div class="plan-card featured" onclick="goStripe('agent')">
-          <div class="plan-badge">Most popular</div>
-          <div class="plan-tier">Agent</div>
-          <div class="plan-price"><sup>$</sup>14<sub>/mo</sub></div>
-          <div class="plan-quota">20 listings / month</div>
-          <ul class="plan-features">
-            <li>All 6 platforms</li>
-            <li>3 posts per platform</li>
-            <li>Smart captions</li>
-            <li>Full video script</li>
-            <li>Neighbourhood action plan</li>
-            <li>All 5 tone options</li>
-            <li>WhatsApp broadcast copy</li>
-            <li>Unlimited listing history</li>
-          </ul>
-          <button class="plan-btn featured-btn" onclick="goStripe('agent')">Get started</button>
-        </div>
-        <div class="plan-card" onclick="goStripe('pro')">
-          <div class="plan-tier">Pro</div>
-          <div class="plan-price"><sup>$</sup>29<sub>/mo</sub></div>
-          <div class="plan-quota">60 listings / month</div>
-          <ul class="plan-features">
-            <li>Everything in Agent</li>
-            <li>Custom brand voice</li>
-            <li>Email newsletter draft</li>
-            <li>Agent bio generator</li>
-            <li>Priority regeneration</li>
-            <li>CSV export</li>
-            <li>Priority support</li>
-          </ul>
-          <button class="plan-btn" onclick="goStripe('pro')">Get started</button>
-        </div>
-        <div class="plan-card" onclick="goStripe('team')">
-          <div class="plan-tier">Team</div>
-          <div class="plan-price"><sup>$</sup>59<sub>/mo</sub></div>
-          <div class="plan-quota">Unlimited listings</div>
-          <ul class="plan-features">
-            <li>Everything in Pro</li>
-            <li>Up to 5 agent seats</li>
-            <li>Team dashboard</li>
-            <li>Shared brand voice</li>
-            <li>Early feature access</li>
-            <li>Dedicated support</li>
-          </ul>
-          <button class="plan-btn" onclick="goStripe('team')">Get started</button>
-        </div>
-      </div>
-    </div>
-  </section>
+Tone & brand control
+Luxury, warm, urgent, professional, or story-driven — every word matches the mood you want to create.
+All plans
 
-  <!-- TESTIMONIALS -->
-  <section class="section bg-white">
-    <div class="container">
-      <div class="eyebrow-gold">Agents love it</div>
-      <h2 class="section-title">What they're saying</h2>
-      <div class="testi-grid">
-        <div class="testi-card">
-          <div class="stars">★★★★★</div>
-          <p>"I used to spend an hour per listing writing captions. Now I paste the details and I'm done in 60 seconds. The Instagram posts are genuinely better than anything I was writing myself."</p>
-          <div class="testi-author">
-            <div class="avatar">SA</div>
-            <div><strong>Sarah Al Mansoori</strong><span>Senior Agent · Downtown Dubai</span></div>
-          </div>
-        </div>
-        <div class="testi-card">
-          <div class="stars">★★★★★</div>
-          <p>"The video script feature is what sold me. I just read it straight to camera and it sounds natural. My reels have doubled in views since I started using listAI."</p>
-          <div class="testi-author">
-            <div class="avatar">MK</div>
-            <div><strong>Mohammed Al Kazim</strong><span>Real Estate Consultant · JBR</span></div>
-          </div>
-        </div>
-        <div class="testi-card">
-          <div class="stars">★★★★★</div>
-          <p>"The neighbourhood action plan is brilliant. It tells me exactly which WhatsApp groups to post in and what to say. Sold a unit within 48 hours using just that strategy."</p>
-          <div class="testi-author">
-            <div class="avatar">LR</div>
-            <div><strong>Leila Rashid</strong><span>Property Specialist · Business Bay</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+Hashtag engine
+Platform-optimised hashtag sets generated automatically — location-specific, niche, and high-reach.
+All plans
 
-  <!-- CTA BAND -->
-  <section class="cta-band">
-    <h2>Ready to list smarter?</h2>
-    <p>Join agents closing deals faster with AI-crafted content.</p>
-    <button class="btn-gold" onclick="showPage('signup')">Generate your first listing →</button>
-  </section>
+Custom brand voice
+Define your personal style once. Every generation sounds like you — not like a robot.
+Pro+
 
-  <footer class="footer">
-    <div class="foot-logo">list<em>AI</em></div>
-    <div class="foot-links">
-      <span>Privacy Policy</span>
-      <span>Terms of Service</span>
-      <span>Support</span>
-    </div>
-    <div class="foot-copy">© 2025 listAI · Built for real estate professionals</div>
-  </footer>
+Email newsletter draft
+Turn any listing into a polished email ready to send to your contact list.
+Pro+
 
-</div><!-- end landing -->
+Team dashboard
+Up to 5 agent seats with shared brand voice and a unified content history for your whole office.
+Team
+Pricing
+Simple, agent-first plans
+No free plan — every plan is built to deliver real results from day one.
+Starter
+$4/mo
+5 listings / month
+	•	Instagram & Facebook posts
+	•	3 posts per platform
+	•	Smart captions
+	•	Hashtag engine
+	•	3 tone options
+	•	30-day listing history
+	•	Copy to clipboard
+Get started
+Most popular
+Agent
+$14/mo
+20 listings / month
+	•	All 6 platforms
+	•	3 posts per platform
+	•	Smart captions
+	•	Full video script
+	•	Neighbourhood action plan
+	•	All 5 tone options
+	•	WhatsApp broadcast copy
+	•	Unlimited listing history
+Get started
+Pro
+$29/mo
+60 listings / month
+	•	Everything in Agent
+	•	Custom brand voice
+	•	Email newsletter draft
+	•	Agent bio generator
+	•	Priority regeneration
+	•	CSV export
+	•	Priority support
+Get started
+Team
+$59/mo
+Unlimited listings
+	•	Everything in Pro
+	•	Up to 5 agent seats
+	•	Team dashboard
+	•	Shared brand voice
+	•	Early feature access
+	•	Dedicated support
+Get started
+Agents love it
+What they're saying
+★★★★★
+"I used to spend an hour per listing writing captions. Now I paste the details and I'm done in 60 seconds. The Instagram posts are genuinely better than anything I was writing myself."
+SA
+Sarah Al MansooriSenior Agent · Downtown Dubai
+★★★★★
+"The video script feature is what sold me. I just read it straight to camera and it sounds natural. My reels have doubled in views since I started using listAI."
+MK
+Mohammed Al KazimReal Estate Consultant · JBR
+★★★★★
+"The neighbourhood action plan is brilliant. It tells me exactly which WhatsApp groups to post in and what to say. Sold a unit within 48 hours using just that strategy."
+LR
+Leila RashidProperty Specialist · Business Bay
+Ready to list smarter?
+Join agents closing deals faster with AI-crafted content.
+Generate your first listing →
+listAI
+Privacy Policy Terms of Service Support
+© 2025 listAI · Built for real estate professionals
+listAI
+Create your account
+Start generating listing content in minutes.
+Full name
+Email address
+Password
+Choose your plan
+Starter$4/mo · 5 listings
+Agent ✦$14/mo · 20 listings
+Pro$29/mo · 60 listings
+Team$59/mo · Unlimited
+Create account & continue
+Already have an account? Sign in
+listAI
+Welcome back
+Sign in to your listAI account.
+Continue with Google
+or sign in with email
+Email address
+Password
+Forgot password?
+Sign in
+Don't have an account? Sign up
+listAI
+1
+Details
+
+2
+Generating
+
+3
+Content
+— / — listings
+?
+— —
+
+My dashboard Settings Sign out
+Tell us about the property
+The more detail you give, the richer your content.
+Property basics
+Property type
+              ApartmentVillaPenthouse
+              TownhouseStudioDuplex
+              CommercialLand / Plot
+            
+Listing type
+              For SaleFor RentOff-PlanInvestment
+            
+Bedrooms
+Bathrooms
+Size (sq ft)
+Price / Rent
+Location & community
+Key features & highlights
+Content settings
+Platforms
+Instagram
+TikTok
+Facebook
+LinkedIn
+WhatsApp
+Twitter / X
+Brand tone
+✦ Luxury
+Warm
+Urgent
+Professional
+Story-driven
+Your brand voice Pro
+Your name (appears in scripts & CTAs)
+Generate all content
+listAI
++ New listing
+?
+— Settings Sign out
+My dashboard
+Welcome back!
+0Listings used
+0Remaining
+—Current plan
+Monthly usage 0 / 0
+
+Listing history
+No listings yet. Generate your first →
+listAI
+← Dashboard
+?
+Change photo
+—
+—
+— plan
+0 Listings used
+0 Remaining
+0 Total generated
+Personal details
+Full name
+Email address
+Phone number (optional)
+Agency / Company (optional)
+Short bio (shown in email drafts)
+Save details
+Change password
+Current password
+New password
+Update password
+Brand voice Pro
+Describe your personal style. listAI will write every post in your voice.
+
+Save brand voice
+Subscription plan
+—
+—
+—
+Active
+This month's usage — / —
 
 
-<!-- ═══════════════════════════════════════
-     PAGE: SIGN UP
-════════════════════════════════════════ -->
-<div id="page-signup" class="page">
-  <div class="auth-wrap">
-    <div class="auth-card">
-      <div class="auth-logo" onclick="showPage('landing')">list<em>AI</em></div>
-      <h2>Create your account</h2>
-      <p class="auth-sub">Start generating listing content in minutes.</p>
+Upgrade your plan
+Starter
+$4/mo
+5 listings/month
+	•	Instagram & Facebook
+	•	3 posts per platform
+	•	Smart captions & hashtags
+	•	30-day history
+Select
+Agent
+$14/mo
+20 listings/month
+	•	All 6 platforms
+	•	Full video script
+	•	Neighbourhood action plan
+	•	Unlimited history
+Select
+Pro
+$29/mo
+60 listings/month
+	•	Everything in Agent
+	•	Custom brand voice
+	•	Email newsletter draft
+	•	Agent bio generator
+	•	CSV export
+Select
+Team
+$59/mo
+Unlimited listings
+	•	Everything in Pro
+	•	5 agent seats
+	•	Team dashboard
+	•	Shared brand voice
+	•	Priority support
+Select
+Notifications
+Monthly usage summary
+Get an email when you've used 80% of your monthly listings.
+New features
+Be the first to know when listAI launches new tools.
+Save preferences
+Danger zone
+Permanently delete your account and all listing history. This cannot be undone.
+Delete my account
+listAI Setup
+Admin setup
+Paste your Anthropic API key below. It is saved privately in your browser and never shared.
+Anthropic API key
+Save API key
+Current key status: checking...
+Clear saved key
+To reach this page again, go to your site URL and add #setup at the end.
 
-      <div id="signup-plan-info" class="plan-info-box" style="display:none"></div>
-
-      <div class="form-group">
-        <label>Full name</label>
-        <input type="text" id="su-name" placeholder="Sarah Al Mansoori" />
-      </div>
-      <div class="form-group">
-        <label>Email address</label>
-        <input type="email" id="su-email" placeholder="you@example.com" />
-      </div>
-      <div class="form-group">
-        <label>Password</label>
-        <input type="password" id="su-pass" placeholder="Min. 8 characters" />
-      </div>
-      <div class="form-group">
-        <label>Choose your plan</label>
-        <div class="plan-selector" id="plan-selector">
-          <div class="plan-option" data-plan="starter" onclick="choosePlan('starter')">
-            <strong>Starter</strong><span>$4/mo · 5 listings</span>
-          </div>
-          <div class="plan-option active" data-plan="agent" onclick="choosePlan('agent')">
-            <strong>Agent ✦</strong><span>$14/mo · 20 listings</span>
-          </div>
-          <div class="plan-option" data-plan="pro" onclick="choosePlan('pro')">
-            <strong>Pro</strong><span>$29/mo · 60 listings</span>
-          </div>
-          <div class="plan-option" data-plan="team" onclick="choosePlan('team')">
-            <strong>Team</strong><span>$59/mo · Unlimited</span>
-          </div>
-        </div>
-      </div>
-
-      <div id="signup-error" class="auth-error" style="display:none"></div>
-      <button class="btn-primary full-btn" onclick="handleSignup()">Create account & continue</button>
-      <p class="auth-switch">Already have an account? <span onclick="showPage('login')">Sign in</span></p>
-    </div>
-  </div>
-</div>
-
-
-<!-- ═══════════════════════════════════════
-     PAGE: LOGIN
-════════════════════════════════════════ -->
-<div id="page-login" class="page">
-  <div class="auth-wrap">
-    <div class="auth-card">
-      <div class="auth-logo" onclick="showPage('landing')">list<em>AI</em></div>
-      <h2>Welcome back</h2>
-      <p class="auth-sub">Sign in to your listAI account.</p>
-      <div class="form-group">
-        <label>Email address</label>
-        <input type="email" id="li-email" placeholder="you@example.com" />
-      </div>
-      <div class="form-group">
-        <label>Password</label>
-        <input type="password" id="li-pass" placeholder="Your password" />
-      </div>
-      <div id="login-error" class="auth-error" style="display:none"></div>
-      <button class="btn-primary full-btn" onclick="handleLogin()">Sign in</button>
-      <p class="auth-switch">Don't have an account? <span onclick="showPage('signup')">Sign up</span></p>
-    </div>
-  </div>
-</div>
-
-
-<!-- ═══════════════════════════════════════
-     PAGE: APP (the tool)
-════════════════════════════════════════ -->
-<div id="page-app" class="page">
-
-  <!-- APP NAV -->
-  <nav class="app-nav">
-    <div class="logo" onclick="showPage('landing')">list<em>AI</em></div>
-    <div class="app-nav-center">
-      <div class="prog-step active" id="ps1"><div class="prog-num">1</div><span>Details</span></div>
-      <div class="prog-line"></div>
-      <div class="prog-step" id="ps2"><div class="prog-num">2</div><span>Generating</span></div>
-      <div class="prog-line"></div>
-      <div class="prog-step" id="ps3"><div class="prog-num">3</div><span>Content</span></div>
-    </div>
-    <div class="app-nav-right">
-      <div class="usage-pill" id="usage-pill">— / — listings</div>
-      <div class="user-menu" onclick="toggleUserMenu()">
-        <div class="user-avatar" id="user-avatar">?</div>
-        <div class="user-dropdown" id="user-dropdown">
-          <span id="user-name-display">—</span>
-          <span id="user-plan-display" class="dropdown-plan">—</span>
-          <hr/>
-          <span onclick="showPage('dashboard')">My dashboard</span>
-          <span onclick="showPage('settings')">Settings</span>
-          <span onclick="handleLogout()" class="logout">Sign out</span>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- FORM VIEW -->
-  <div id="app-form">
-    <div class="app-container">
-      <div class="app-header">
-        <h2>Tell us about the property</h2>
-        <p>The more detail you give, the richer your content.</p>
-      </div>
-
-      <div class="form-section">
-        <div class="form-section-title">Property basics</div>
-        <div class="fg-row">
-          <div class="fg">
-            <label>Property type</label>
-            <select id="f-type">
-              <option>Apartment</option><option>Villa</option><option>Penthouse</option>
-              <option>Townhouse</option><option>Studio</option><option>Duplex</option>
-              <option>Commercial</option><option>Land / Plot</option>
-            </select>
-          </div>
-          <div class="fg">
-            <label>Listing type</label>
-            <select id="f-listing">
-              <option>For Sale</option><option>For Rent</option><option>Off-Plan</option><option>Investment</option>
-            </select>
-          </div>
-        </div>
-        <div class="fg-row">
-          <div class="fg"><label>Bedrooms</label><input type="number" id="f-beds" placeholder="e.g. 3" min="0" max="30" /></div>
-          <div class="fg"><label>Bathrooms</label><input type="number" id="f-baths" placeholder="e.g. 2" min="0" max="30" /></div>
-        </div>
-        <div class="fg-row">
-          <div class="fg"><label>Size (sq ft)</label><input type="text" id="f-size" placeholder="e.g. 2,450" /></div>
-          <div class="fg"><label>Price / Rent</label><input type="text" id="f-price" placeholder="e.g. AED 2,800,000" /></div>
-        </div>
-        <div class="fg"><label>Location &amp; community</label><input type="text" id="f-loc" placeholder="e.g. Downtown Dubai, Burj Khalifa District" /></div>
-        <div class="fg"><label>Key features &amp; highlights</label><textarea id="f-feats" placeholder="e.g. Full Burj Khalifa view, private pool, smart home system, marble floors, corner unit, walk to metro, pet-friendly..."></textarea></div>
-      </div>
-
-      <div class="form-section">
-        <div class="form-section-title">Content settings</div>
-        <div class="fg">
-          <label>Platforms</label>
-          <div class="chip-wrap" id="plat-chips">
-            <div class="chip on" data-v="Instagram">Instagram</div>
-            <div class="chip on" data-v="TikTok">TikTok</div>
-            <div class="chip on" data-v="Facebook">Facebook</div>
-            <div class="chip on" data-v="LinkedIn">LinkedIn</div>
-            <div class="chip" data-v="WhatsApp">WhatsApp</div>
-            <div class="chip" data-v="Twitter/X">Twitter / X</div>
-          </div>
-        </div>
-        <div class="fg" style="margin-top:1rem">
-          <label>Brand tone</label>
-          <div class="chip-wrap" id="tone-chips">
-            <div class="chip on" data-v="Luxury & Aspirational">✦ Luxury</div>
-            <div class="chip" data-v="Warm & Friendly">Warm</div>
-            <div class="chip" data-v="Urgent & FOMO">Urgent</div>
-            <div class="chip" data-v="Professional & Corporate">Professional</div>
-            <div class="chip" data-v="Story-driven & Emotional">Story-driven</div>
-          </div>
-        </div>
-        <div class="fg" style="margin-top:1rem" id="brand-voice-section" style="display:none">
-          <label>Your brand voice <span class="pro-tag">Pro</span></label>
-          <textarea id="f-brand-voice" placeholder="Describe your personal style... e.g. I always open with a lifestyle statement, I avoid using the word 'luxury', I speak directly to investors..."></textarea>
-        </div>
-        <div class="fg" style="margin-top:1rem">
-          <label>Your name (appears in scripts &amp; CTAs)</label>
-          <input type="text" id="f-agent" placeholder="e.g. Sarah Al Mansoori" />
-        </div>
-      </div>
-
-      <!-- PRO: Email newsletter option -->
-      <div class="form-section" id="email-newsletter-section" style="display:none">
-        <div class="form-section-title">Extra deliverables <span class="pro-tag">Pro</span></div>
-        <div class="toggle-row">
-          <div>
-            <strong>Email newsletter draft</strong>
-            <p>A full email ready to send to your contact list about this property.</p>
-          </div>
-          <label class="toggle">
-            <input type="checkbox" id="toggle-email" />
-            <span class="toggle-slider"></span>
-          </label>
-        </div>
-        <div class="toggle-row">
-          <div>
-            <strong>Agent bio snippet</strong>
-            <p>A short professional bio to append to your posts and emails.</p>
-          </div>
-          <label class="toggle">
-            <input type="checkbox" id="toggle-bio" />
-            <span class="toggle-slider"></span>
-          </label>
-        </div>
-      </div>
-
-      <div id="gen-error" class="auth-error" style="display:none;margin-top:1rem"></div>
-      <button class="generate-btn" id="gen-btn" onclick="generate()">
-        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" fill="none" stroke-width="2"/></svg>
-        Generate all content
-      </button>
-    </div>
-  </div>
-
-  <!-- LOADING VIEW -->
-  <div id="app-loading" style="display:none">
-    <div class="loading-view">
-      <div class="spinner"></div>
-      <h3>Crafting your content pack</h3>
-      <p>listAI is writing every post, script, and action step for your listing.</p>
-      <div class="l-steps">
-        <div class="l-step" id="ls1"><div class="l-dot"></div>Analysing property details</div>
-        <div class="l-step" id="ls2"><div class="l-dot"></div>Writing platform posts &amp; captions</div>
-        <div class="l-step" id="ls3"><div class="l-dot"></div>Crafting video script</div>
-        <div class="l-step" id="ls4"><div class="l-dot"></div>Building neighbourhood action plan</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- RESULTS VIEW -->
-  <div id="app-results" style="display:none">
-    <div class="app-container">
-      <div class="results-topbar">
-        <div>
-          <h2 class="results-title">Your content is ready</h2>
-          <p class="results-sub" id="res-sub">—</p>
-        </div>
-        <div class="results-actions">
-          <button class="btn-outline-sm" id="export-csv-btn" style="display:none" onclick="exportCSV()">Export CSV</button>
-          <button class="back-btn" onclick="resetApp()">← New listing</button>
-        </div>
-      </div>
-      <div class="out-tabs" id="out-tabs"></div>
-      <div id="out-cards"></div>
-    </div>
-  </div>
-
-</div><!-- end app -->
-
-
-<!-- ═══════════════════════════════════════
-     PAGE: DASHBOARD
-════════════════════════════════════════ -->
-<div id="page-dashboard" class="page">
-  <nav class="app-nav">
-    <div class="logo" onclick="showPage('landing')">list<em>AI</em></div>
-    <div class="app-nav-right">
-      <button class="btn-primary" onclick="showPage('app')">+ New listing</button>
-      <div class="user-menu" onclick="toggleUserMenu2()">
-        <div class="user-avatar" id="user-avatar2">?</div>
-        <div class="user-dropdown" id="user-dropdown2">
-          <span id="user-name-display2">—</span>
-          <span onclick="showPage('settings')">Settings</span>
-          <span onclick="handleLogout()" class="logout">Sign out</span>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <div class="dash-container">
-    <div class="dash-header">
-      <div>
-        <h2>My dashboard</h2>
-        <p id="dash-greeting">Welcome back!</p>
-      </div>
-      <div class="dash-stats">
-        <div class="dash-stat"><span class="dash-stat-n" id="stat-used">0</span><span>Listings used</span></div>
-        <div class="dash-stat"><span class="dash-stat-n" id="stat-remaining">0</span><span>Remaining</span></div>
-        <div class="dash-stat"><span class="dash-stat-n" id="stat-plan">—</span><span>Current plan</span></div>
-      </div>
-    </div>
-
-    <div class="dash-usage-bar">
-      <div class="usage-bar-label">
-        <span>Monthly usage</span>
-        <span id="usage-bar-text">0 / 0</span>
-      </div>
-      <div class="usage-track"><div class="usage-fill" id="usage-fill"></div></div>
-    </div>
-
-    <div class="dash-section-title">Listing history</div>
-    <div id="history-list" class="history-list">
-      <div class="history-empty">No listings yet. <span onclick="showPage('app')">Generate your first →</span></div>
-    </div>
-  </div>
-</div>
-
-
-<!-- ═══════════════════════════════════════
-     PAGE: SETTINGS
-════════════════════════════════════════ -->
-<div id="page-settings" class="page">
-  <nav class="app-nav">
-    <div class="logo" onclick="showPage('landing')">list<em>AI</em></div>
-    <div class="app-nav-right">
-      <button class="back-btn" onclick="showPage('dashboard')">← Dashboard</button>
-    </div>
-  </nav>
-  <div class="settings-container">
-    <h2>Account settings</h2>
-
-    <div class="settings-section">
-      <div class="settings-section-title">Profile</div>
-      <div class="fg"><label>Full name</label><input type="text" id="set-name" /></div>
-      <div class="fg"><label>Email</label><input type="email" id="set-email" /></div>
-      <button class="btn-primary" onclick="saveProfile()">Save profile</button>
-    </div>
-
-    <div class="settings-section" id="brand-voice-settings">
-      <div class="settings-section-title">Brand voice <span class="pro-tag">Pro</span></div>
-      <p class="settings-desc">Describe your personal style. listAI will use this in every generation.</p>
-      <div class="fg"><textarea id="set-brand-voice" rows="4" placeholder="e.g. I always open with a lifestyle statement. I speak directly to investors. I never use the word 'luxury'..."></textarea></div>
-      <button class="btn-primary" onclick="saveBrandVoice()">Save brand voice</button>
-    </div>
-
-    <div class="settings-section">
-      <div class="settings-section-title">Subscription</div>
-      <div class="current-plan-box" id="current-plan-box">
-        <div>
-          <strong id="plan-name-display">—</strong>
-          <p id="plan-desc-display">—</p>
-        </div>
-        <button class="btn-outline-sm" onclick="showPage('pricing-upgrade')">Upgrade plan</button>
-      </div>
-    </div>
-
-    <div class="settings-section danger-zone">
-      <div class="settings-section-title">Danger zone</div>
-      <button class="btn-danger" onclick="deleteAccount()">Delete account</button>
-    </div>
-  </div>
-</div>
-
-
-<!-- ═══════════════════════════════════════
-     TOAST NOTIFICATION
-════════════════════════════════════════ -->
-
-<!-- ═══════════════════════════════════════
-     PAGE: ADMIN SETUP (visit /index.html#setup)
-════════════════════════════════════════ -->
-<div id="page-setup" class="page">
-  <div class="auth-wrap">
-    <div class="auth-card" style="max-width:500px">
-      <div class="auth-logo">list<em>AI</em> Setup</div>
-      <h2>Admin setup</h2>
-      <p class="auth-sub">Paste your Anthropic API key below. It is saved privately in your browser and never shared.</p>
-      <div class="form-group">
-        <label>Anthropic API key</label>
-        <input type="password" id="setup-key" placeholder="sk-ant-api03-..." />
-      </div>
-      <div id="setup-status" style="font-size:0.82rem;margin-bottom:0.75rem;display:none"></div>
-      <button class="btn-primary full-btn" onclick="saveApiKey()">Save API key</button>
-      <div style="margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid var(--border)">
-        <p style="font-size:0.78rem;color:var(--ink4);margin-bottom:0.75rem">Current key status: <strong id="key-status">checking...</strong></p>
-        <button class="btn-danger" onclick="clearApiKey()" style="font-size:0.78rem;padding:0.4rem 1rem">Clear saved key</button>
-      </div>
-      <p style="margin-top:1.5rem;font-size:0.75rem;color:var(--ink4)">To reach this page again, go to your site URL and add <strong>#setup</strong> at the end.</p>
-    </div>
-  </div>
-</div>
-
-<div id="toast" class="toast"></div>
-
-<script src="app.js"></script>
-</body>
-</html>
+listAI
+Set new password
+Choose a strong new password for your account.
+New password
+Confirm new password
+Update password
+← Back to sign in
